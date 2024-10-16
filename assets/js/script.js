@@ -44,11 +44,6 @@ function runGame(gameType) {
     } else if (gameType === "division") {
         displayDivisionQuestion(num1, num2);
     }
-    //     code not needed but save until sure
-    //     else {
-    //     alert(`Unknown game type: ${gameType}`);
-    //     throw `Unknown game type: ${gameType}. Aborting!`;
-    // }
 }
 
 /**
@@ -91,13 +86,7 @@ function calculateCorrectAnswer() {
         else if (operator === "/") {
             return [ operand1 / operand2, "division" ];
         }
-    // code not needed but keeping until sure
-    //     else {
-    //     alert(`Unimplemented operator ${operator}`);
-    //     throw `Unimplemented operator ${operator}. Aborting!`;
-    // }
-
-}
+    }
 
 /**
  * Gets the current score from the DOM and increments it by 1
